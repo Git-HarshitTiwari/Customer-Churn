@@ -2,6 +2,10 @@
 
 A complete machine learning project that predicts whether a customer is likely to leave a service based on historical customer behavior.
 
+## Description
+
+Customer Churn Prediction is a classification-based machine learning project that analyzes customer profile, billing, contract, and service usage data to estimate whether a customer is likely to stop using a service. The project includes data preprocessing, model training, evaluation reports, feature-importance analysis, a saved prediction model, a command-line predictor, and a Streamlit app for interactive churn prediction.
+
 ## Project Goals
 
 - Predict customer churn using classification models.
