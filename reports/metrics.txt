@@ -1,0 +1,37 @@
+Customer Churn Prediction - Model Report
+========================================
+
+Cross-validation ROC AUC:
+- Logistic Regression: 1.000
+- Random Forest: 1.000
+
+Final model: Random Forest
+Test accuracy: 0.900
+Test ROC AUC: 1.000
+
+Confusion matrix [[TN, FP], [FN, TP]]:
+[[6 0]
+ [1 3]]
+
+Classification report:
+              precision    recall  f1-score   support
+
+    No Churn       0.86      1.00      0.92         6
+       Churn       1.00      0.75      0.86         4
+
+    accuracy                           0.90        10
+   macro avg       0.93      0.88      0.89        10
+weighted avg       0.91      0.90      0.90        10
+
+Top churn factors:
+                                    feature  importance
+categorical__PaymentMethod_Electronic check    0.231938
+       categorical__Contract_Month-to-month    0.112257
+                            numeric__tenure    0.085463
+           categorical__InternetService_DSL    0.083617
+         categorical__InternetService_Fiber    0.083389
+          categorical__PaperlessBilling_Yes    0.065563
+                      numeric__TotalCharges    0.065090
+                    numeric__MonthlyCharges    0.064985
+           categorical__PaperlessBilling_No    0.057612
+                   categorical__Partner_Yes    0.029886
